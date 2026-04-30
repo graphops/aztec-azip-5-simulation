@@ -1,0 +1,11 @@
+[project]
+name = "aztec-azip-5-simulation"
+version = "0.1.0"
+description = "Simulation of AZIP-5 parameters"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.0",
+    "pandas>=2.3.3",
+]
