@@ -1,0 +1,8 @@
+_site/
+.quarto/
+.jupyter_cache/
+.ipynb_checkpoints/
+*.html
+
+/.quarto/
+**/*.quarto_ipynb
