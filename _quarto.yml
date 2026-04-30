@@ -13,10 +13,12 @@ website:
 
 format:
   html:
+    page-layout: full
     toc: true
     code-fold: true
     code-tools: true
     theme: cosmo
+    css: styles.css
     embed-resources: false
 
 execute:

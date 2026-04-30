@@ -1,0 +1,24 @@
+/* Use the viewport for the notebook instead of Quarto's article-width column. */
+#quarto-content.page-layout-full.page-columns {
+  grid-template-columns:
+    [screen-start] minmax(16px, 2vw)
+    [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0, 1fr)
+    [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] minmax(16px, 2vw)
+    [screen-end];
+}
+
+#quarto-content.page-layout-full main#quarto-document-content {
+  grid-column: body-content-start / body-content-end;
+  max-width: none;
+  width: 100%;
+}
+
+#quarto-content.page-layout-full #quarto-margin-sidebar {
+  display: none;
+}
+
+#quarto-content.page-layout-full .cell-output-display,
+#quarto-content.page-layout-full .aztec-plotly-widget {
+  max-width: none;
+  width: 100%;
+}
